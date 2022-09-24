@@ -23,7 +23,9 @@ h2 {
 li {
 	color: rgb(60,60,60);
 }
-
+btn {
+    border-width: 2px,2px
+}
 /* Surcharge les grands blocs */
 .main-content {
     background-color: #FAF9F8;
