@@ -7,6 +7,11 @@ body {
 	background-attachment: fixed;
 }
 
+img {
+    width: 650px;
+    border: 1px solid rgba(65, 63, 63, 0.413);
+}
+
 h1 {
 	
 	color:white;
