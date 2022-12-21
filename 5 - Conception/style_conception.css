@@ -1,4 +1,3 @@
-/* Surcharge les règles contenant un élément html */
 body {
 	background-image: url("../IMAGES/background\ -\ Conception.jpg");
 	background-position: center center;
@@ -7,22 +6,6 @@ body {
 	background-attachment: fixed;
 }
 
-h1 {
-    font-weight: 5000;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-weight: 50000;
-    font-size: 1.2em;
-    margin-bottom: 2rem;
-}
-
-li {
-	color: rgb(60,60,60);
-}
-
-/* Surcharge les grands blocs */
 .main-content {
     background-color: #FAF9F8;
 }
@@ -33,21 +16,6 @@ li {
     background-color: aliceblue;
     margin-top: 2rem;
     padding: 1rem;
-}
-.resultat h3 {
-    margin: 2rem auto;
-}
-.resultat h3:first-child{
-    margin-top: 0;
-}
-footer .container {
-    background-color: inherit;
-}
-footer a, footer a:hover {
-    color: white;
-}
-footer a:hover {
-    text-decoration: underline;
 }
 
 /* Surcharge des éléments Bootstrap */
@@ -61,4 +29,96 @@ footer a:hover {
     background-color: black;
     padding-top: 2rem;
     padding-bottom: 3rem;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+.card {
+    background: white;
+    width: 350px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 40%;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.informations {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card h1 {
+    margin-top: 30px;
+}
+.card h2 {
+    font-size: 1.3em;
+}
+
+.card h1, .card h2 {
+    transition: all .3s;
+}
+
+.card:hover img, .card:hover h1, .card:hover h2 {
+    transform: translateY(-50px);
+}
+
+.icon {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+  
+.icon a i {
+    margin: 10px;
+    color: black;
+    transition: all .6s;
+    transform: translateY(100px);
+}
+  
+.card:hover .icon a i {
+    transform: translateY(15px);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+.box {
+    width: 350px;
+    height: 400px;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+}
+
+.box::before, .box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+  width: 100%;
+  height: 100%;
+  transform: scale(1.02);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 20s infinite;
+}
+
+.box::after {
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
 }
