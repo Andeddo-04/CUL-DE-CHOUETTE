@@ -3,7 +3,7 @@ body {
 	background-image: url("../IMAGES/background\ -\ tuto.jpg");
 	background-position: center center;
 	background-size: 100%;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
@@ -28,26 +28,33 @@ li {
 .main-content {
     background-color: #FAF9F8;
 }
+
 .information {
     margin-bottom: 1.5rem;
 }
+
 .resultat {
     background-color: aliceblue;
     margin-top: 2rem;
     padding: 1rem;
 }
+
 .resultat h3 {
     margin: 2rem auto;
 }
+
 .resultat h3:first-child{
     margin-top: 0;
 }
+
 footer .container {
     background-color: inherit;
 }
+
 footer a, footer a:hover {
     color: white;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
@@ -57,10 +64,13 @@ footer a:hover {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
+    background-color: black;
 }
+
 .btn-block {
     margin-top: 2rem;
 }
+
 .container {
     background-color: None;
     padding-top: 2rem;
