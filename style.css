@@ -55,6 +55,8 @@ footer a:hover {
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
     background-color: black;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
